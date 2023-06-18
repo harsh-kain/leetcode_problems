@@ -13,11 +13,10 @@ public:
             j++;
         }
         return res;
-        
     }
 };
 int main()
 {
-    
+
     return 0;
 }
