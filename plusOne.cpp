@@ -9,6 +9,7 @@ public:
             if(i == n-1){
                 digits[i]++;
             }
+            
             if(digits[i] ==  10){
                 digits[i] = 0;
                 if(i != 0){
@@ -25,5 +26,7 @@ public:
 };
 int main()
 {
+    vector<int> arr = {1,2,3,4};
+    
     return 0;
 }
