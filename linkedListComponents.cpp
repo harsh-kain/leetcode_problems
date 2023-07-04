@@ -1,6 +1,6 @@
 #include<iostream>
 #include<vector>
-// #include <unordered_map>
+#include <unordered_map>
 using namespace std;
 
 // Definition for singly-linked list.
@@ -14,23 +14,23 @@ struct ListNode {
 
 class Solution {
 public:
-    int numComponents(ListNode* head, vector<int>& nums) {
-        unordered_set<int> s;
-        for(auto it: nums) s.insert(it);
-        bool conn=false;
-        int total=0;
-        while(head){
-            int val= head->val;
-            if(s.count(val)&& conn==false){
-                conn=true;
-                total++;
-            }
-            else if(s.count(val)==0&& conn==true)conn=false;
-            head=head->next;
+    // int numComponents(ListNode* head, vector<int>& nums) {
+    //     unordered_set<int> s;
+    //     for(auto it: nums) s.insert(it);
+    //     bool conn=false;
+    //     int total=0;
+    //     while(head){
+    //         int val= head->val;
+    //         if(s.count(val)&& conn==false){
+    //             conn=true;
+    //             total++;
+    //         }
+    //         else if(s.count(val)==0&& conn==true)conn=false;
+    //         head=head->next;
 
-        }
-        return total;
-    }
+    //     }
+    //     return total;
+    // }
 };
 int main()
 {
